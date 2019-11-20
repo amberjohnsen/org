@@ -1,0 +1,207 @@
+*  Riccardo CERN 
+richardo.rocha@cern.ch
+<2019-11-19 Tue>
+Cern physics lab near gineva
+Large experiments eg what is the universe made of?
+
+Build large things and data is collected
+ve to commodity - automation and efficecy.
+
+1beta byte a second 
+** 
+Frequent upgrades 
+Maintance 
+Deployment
+Update 
+Utilizatiuon 
+
+Vertualisation - seperates hardware 
+Easy transition - after comfortable - any configurtion managment
+Automation tools ssh systems 
+
+
+*** Observations 
+Full room, HPC...
+Very positive factual 
+
+** Training workshops office hours
+Gitops
+ - [ ] storing and maintaining is in git 
+ - [ ] good easy onboarding in K8s
+- [ ] acesing ther confign in git! familiarising them with k8s
+-Puppet ot hlm
+
+- [ ] Mainifest vs goland YAML config (everyone hates it )
+- [ ] sPEED OF DEPLOYMENT AND ITERATION IN DEPLOYMENT 
+
+** repos two types
+1. CERN storage and maintaining
+2. Mirrored syned with our upstream and our local ones 
+1.a helps us maintain control
+
+*** Making available to anyone
+The upstream we have internal and external ones 
+*** Umbrella charts - companies and institutions
+eg mySQL chartsWe wiill not deploy directly - then you depliy the META charts and combine them by defining  units 
+
+<2019-11-19 Tue>
+Example of the commands to do chart 
+*** Managing secrets
+build on secrets or (there is mo easy way oto use these on k8s
+Volt is a fully managed solution - we do not have this in house
+2nd optio9n secrets stored in a values file encrypted
+ Helm example Ricardo cern<2019-11-19 Tue>
+reuse plug in with kubectl
+
+*** Fluz and git ops  
+**** Flux is one opton we choose there are others
+
+have to put cfredentials ssome wher ein git or something thaqt works with 
+Updates local whihc is a custome local resource then updates cluster 
+Flux also you can define or it write update to charts full cycle we do not use it yet 
+
+when ther is a new release this has to be update 
+Define repo (git) where the helm chart is 
+The branch
+**** Plug encrypted values in<2019-11-19 Tue> 
+requirements file cluster file - we maintane production 1 and a develping one 
+
+*** Secret plug in for helm 
+We store outside of helpto track the config while stil benefiting from flux
+update cluster - update flux mainually 
+
+Presetting up cluster - creating the namespace
+
+Deploying for database, mySQL and many others 
+handling gpu's nivida driver 
+Deploying for that 
+ 
+*** Releases 
+define demo branch 
+config of application
+
+Flux say the new helm release then applied it to cluster.
+Validating
+Full jupiter notbook running(after log in to server)
+
+binder.dem.cern.ch 
+
+changes add
+commit
+message
+push 
+wait 1 minute for flux to add changesor you can 
+fluxctl sync
+and it will apply change 
+* we want to extend tidy up
+- [ ] complete helm release amnaged by flux
+- [ ] then we have developer and main 
+- [ ] Promethisus and pushing to metrics service ect<2019-11-19 Tue>
+
+we rely on helm and flux toolset containers
+git THE SOURCE of truth 
+
+Helm v3 and goodbye tiller 
+Helm ub signed helm charts 
+(re) consider auto charts and container image clustrs 
+* We dont want to treat clusters as pets - tools to recover it but we want to convince people to do this - spread the load make it easierkeep app always up
+Cattle clusters blue/green, canary with service mesh /
+
+* SIG Arch
+** Anyhing where tl/chairowners conflict
+Experts
+Subscribee to mainling list
+Good for confoirmance and for running 
+
+** Apis two types
+1. have to go throiugh review if the api is on k8s
+trying to ge ndividual seperatio n of this - spinning up cacity
+if you are using api and could help with that 
+
+** Code organisation Sub-project
+eg docker docker
+microsoft vender specific lots of these including cloud providers 
+
+** TODO how do we make these easier, simpler ... code subproject
+looking deply at vendor deoeniences
+Can we switch to something else (new version comes through can we hange that )
+Depencies cause problems - eg azure 
+<2019-11-19 Tue>
+dependecy managment
+Then we jump in and say you need to do this ...and what fixing 3 dependinces just for the azure tthings this is code organisiation  ongoing
+
+** Staging direct 
+- [ ] subrepo 
+
+We go through the mechanism of what is the best way to do this?
+** Subproject conformance<2019-11-19 Tue> 
+we write tests 
+then are these valid conformance test 
+yes then we add a tag 
+then run as part of a (cl?) job then run it end to end tests goes through sonoboy 
+then runin community 
+running  sonoughbough = running our conformance tests are ours
+
+older versions older 
+API snoop running end to end points then tells us how we are doing 
+Woeking ot close these caps
+
+some one will write a text file this is what we are tyring to do from testthen test will turn that into code and eventually a test 
+** TODO This description is needed 
+** Production re3aediness
+from cluster operators - these are hard to run 
+inabilitya to monitor at scale 
+lack of testing
+problems
+lack of documentation
+
+*** Goal 
+How will people run this production
+
+* Technical dept
+
+great to get involved talk to great minds, learn alot
+
+couldnt take through process
+issues we need to do this but hard to do on our ownDisocvery process stage right now
+Some people have left with this in their heads. 
+
+** Interviewing people to say hay why did you do this ? How can we fix these? 
+
+** How did things used to go on? WHy was it done this way... 
+
+** why do we use conditions? WHy should we do them? do we need them?
+
+** i8ssue PR triage 
+
+
+* KEP book club
+best way to get involved, what are the trade ofs, 
+Goal is to make sure things don't slip through the gaps.
+Listen to sig arch meetings
+to educate yourself 
+
+** Issues pr triage
+Some one tagged sig arch? 
+Does it need to be taged with that..
+Push around and send to right sigs if notbookIf burning issues we had to the agenda
+
+* TODO this needs to be done on a weekly basis will take 10mins per week.  
+** Future 
+Custome resources
+extension mechanisms GA in v1.16
+Explore your solution you are looking at on top, see if it works before pushing it out - slow down the changes to k8s and enable features they want without burdoniing the whole community with theis 
+Buildingup ocnformance stuff
+Production readiness 
+
+COme hang out get context
+we will point you to existing keps
+POrs 
+we can give you history or context to helplisten to us then help 
+we keep aysinjc drop mailing list
+get you to how yo9u need to do this.
+
+We need help
+
+ey Hightower '
+

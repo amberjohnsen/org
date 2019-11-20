@@ -1,0 +1,63 @@
+# Ambers todo list as created using the documentation ii onboarding org mode todo list Baby Steps
+* Todo List 
+Create my TODO list to practice using the features TODO/DONE and the AGENDA features
+# Using the document Hierachy
+
+** TODO Use spacemaics to take notes
+*** Things I learned 
+*** Buffers are the screens of text we see
+SPC TAB to switch between buffers
+SPC b to bring up buffer menu
+SPC b b to show open buffers
+SPC b d to kill buffer
+SPC f s to save file (save buffer)
+:w save fileShift-R = rename or move filei
+SPC s b search all open buffers for your search terms 
+SPC s s search file 
+SPC ! run shell 
+*** Frames
+SPC w F make a frame
+C-x 5 o switch frame
+C-x 5 0 close a frame
+SPC w / split frame left and right
+SPC w - split frame up and down 
+SPC w d delete window
+SPC (frame number) swith to frame number 
+** TODO 2 How to change screen colour scheme 
+SPC T n to convert session
+** TODO 3 Links I used 
+|youtube|Evil Mode: Or, How I learned to Stop Worrying and Love Emacs|thoughtbot|
+|       |                                                            |
+   `  
+** TODO 4 Use spanish.org to play with the org-drill, and to get correct syntax
+ 
+** TODO Add my keys to windows 
+** TODO 
+
+
+* org-drill                                                           :drill:
+Flash cards using cards aka topics with the :drill: tag added on! Built in functionality to build and test your self on content,
+rate your answer, drill cards will be shown to you on your rating and / or how you set them.  this is based on the research on the 
+memorising technique for learning by learning, testing your memorm in the minutes, hours, days and months since learning.  
+
+How long did it take you to learn? Have you got memory difficultys or accessability needs? How was your journey? 
+Are you super organised anyway and did this help your navigation of the interactive, rich help and menus offered with this spacemacs config? esp. Drill?
+** TODO Get the accurate links and information for the statement above. 
+Set tag to drill and it will right align :drill: at the heading
+To Set properties for;
+** TODO Add set properties key combinations, examples of all use cases
+ twosided drill cards
+ multisided drill cards
+
+** TODO Set Tags finish this Set Tags                                        :org:mode:
+Set other tags eg k8s these can be easily accessed 
+, look for i insert read options select t for tag set type tag name and as above it sets at the heading 
+
+** TODO add code block  , , example, key combos tags....
+set code block to execute org-drill
+#+
+
+* HTML (PDF...Exporting and publishing content of iimacs, spacemacs, org files)
+using .org mode to create documents with iimacs, spacemacs the ability to create documentation efficiently, reproducable, cross platform,
+cross organisation departments, editable, executable blocks.  (there is even built in study flash cards drill cards - took me 2 days to get my head around the idea,
+and a couple hours to start implenting) 
