@@ -1,0 +1,49 @@
+* Open Source Workshops 
+** STEM _______ Presesmnts the Amber Open Source Workshops 
+** ii.coop
+- Kuberneteds New Contributor Workshops? - is this allowed is it the right way? Heres what I see the benefit of it as....
+
+* TODO 
+[ ] Best way to appraoch local iwi?
+[ ] Connect with stacy to usee her team building exercise
+[ ] Costs; itemised with plan in the future how will this model be funded, back in to stemwanaga trust
+- [ ] Who is partnering
+- [ ] What do we need for the proposal 
+- [ ] Content? for techweek 18 - 24th may 2020 or hold beofree techweek and then demo is on tech week? 
+- iimacs?
+- orgmode?
+- new contributors?
+- 
+- [ ] Is it 3 workshops - what ages 
+- [ ] is it a 4 week delivery program?
+- Diversity 
+- inclusion
+- would techwise be our linux support experts? 
+- would we have sum git-ters? that would provide assistance during workshops
+- Would aspire 2 have funding as their current policy is ... certain amount that is included in their fees under acertain amount of money - they get - we get ...
+- Has 
+ - Costs
+ - impact
+ - in the future could this be something that is paid for...
+ - by attendees or
+ - by community organisations - or local big business
+ 
+
+- [ ] 
+- [ ] Resource List
+ 
+** Why?
+- 
+- 
+- 
+  
+** How?
+- 
+- 
+- 
+  
+** Who?
+- 
+- 
+- 
+  
